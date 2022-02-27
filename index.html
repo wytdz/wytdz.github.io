@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>国产精选发布页|最新地址|最新可用地址</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="keywords" content="国产精选,91视频,探花精选,国产自拍,自拍视频,成人视频,成人图片最新地址
+" />
+    <meta name="description" content="欢迎访问国产精选视频地址发布页，为您提供国产精选视频最新地址。" />
+</head>
+<style>
+	* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F8F9FA;
+    color: #fff;
+    font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+#main {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #6C757D;
+    font-size: 16px;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+.field.desc ul>li {
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+    #main {
+        padding: 0 5px;
+    }
+    .field {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .field.desc ul {
+        margin: 0 15px;
+    }
+    .field.desc ul>li {
+        text-align: left;
+    }
+}
+
+ul>li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+ul>li.text {
+    font-size: 14px;
+}
+
+.field .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #343A40;
+}
+a, a:active, a:hover, a:focus, a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.brand span {
+    color: #ed2333;
+    font-weight: 200;
+}
+.brand span.flag {
+    color: #fff;
+    background: #ed2333;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 5px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+	</style>
+
+<body>
+    <div id="main"></div>
+</body>
+<script type="text/javascript">
+	var emails = [
+    'wytshipin@gmail.com'
+];
+var newestUrls = [
+    'https://www.wyt001.xyz',
+	'https://www.wyt002.xyz',
+	'https://www.wyt003.xyz',
+  'https://www.wyt888.xyz'
+];
+var otherUrls = [
+	'https://wytdz.github.io'
+];
+var notices = [
+    '* 我们推荐PC和Andriod手机用户使用Chrome(谷歌)浏览器访问，iPhone用户我们建议您使用手机自带Safria浏览器访问。',
+    //'* 为了防止域名劫持而无法访问，请设置手机和PC的DNS，我们推荐使用8.8.8.8和1.1.1.1。',
+    '* 大陆地区用户我们建议您可以使用VPN或者代理的方式来访问我们的永久地址。',
+	'* 大陆地区用户我们强烈建议您截图收藏当前页面(gcjxdz.github.io)。'
+];
+
+function createFieldElem(option) {
+    var title = option.title;
+    var items = option.items;
+    var plainText = option.plainText;
+    var classStr = option.classStr;
+    var text = option.text;
+
+    var fieldElem = document.createElement('div');
+    var fieldClass = ['field', classStr].join(' ');
+    fieldElem.setAttribute('class', fieldClass);
+
+    var titleElem = document.createElement('h4');
+    titleElem.setAttribute('class', 'title');
+    titleElem.innerHTML = title;
+    fieldElem.appendChild(titleElem);
+
+    var ulElem = document.createElement('ul');
+    var htmlStr = ''
+    for (var i = 0; i < items.length; i++) {
+        if (plainText) {
+            htmlStr = htmlStr + '<li>' + items[i] + '</li>';
+        } else {
+            htmlStr = htmlStr + '<li><a href="' + items[i] + '" target="_blank">' + items[i] + '</a></li>';
+        }
+    }
+
+    // For text
+    if (text) {
+        htmlStr = htmlStr + '<li class="text">' + text + '</li>';
+    }
+
+    ulElem.innerHTML = htmlStr;
+    fieldElem.appendChild(ulElem);
+    return fieldElem;
+}
+
+window.onload = function () {
+    var mainElem = document.getElementById('main');
+    // append logo
+    var logoElem = document.createElement('div');
+    logoElem.setAttribute('class', 'brand');
+    logoElem.setAttribute('id', 'logo');
+    logoElem.innerHTML = '五月<span>天</span><span class="flag">视频</span>'
+    mainElem.appendChild(logoElem);
+
+    // newest urls
+    var newestFieldElem = createFieldElem({title: '最新地址', items: newestUrls, text: '请使用https://协议访问网站'});
+    mainElem.appendChild(newestFieldElem);
+
+    // other urls
+    var otherFieldElem = createFieldElem({title: '请收藏地址发布页', items: otherUrls});
+    mainElem.appendChild(otherFieldElem);
+
+    // email
+    var mailFieldElem = createFieldElem({title: '发送邮件获得最新地址', items: emails, plainText: true});
+    mainElem.appendChild(mailFieldElem);
+
+    // forever urls
+    //var foreverFieldElem = createFieldElem({title: '永久地址', items: foreverUrls});
+    //mainElem.appendChild(foreverFieldElem);
+
+    // Description
+    var noticeFieldElem = createFieldElem({title: '注意事项', items: notices, plainText: true, classStr: 'desc'});
+    mainElem.appendChild(noticeFieldElem);
+}
+</script>
+</html>
