@@ -119,11 +119,7 @@ a, a:active, a:hover, a:focus, a:visited{
     'wytshipin@gmail.com'
 ];
 var newestUrls = [
-	'https://www.wyt018.xyz',
-	'https://www.wytsp.life',
-		'https://www.wytsp.top',
-		'https://www.wytsp.club',
-	'https://www.w123x.xyz',
+	'https://www.wy1999.xyz',
 ];
 var otherUrls = [
 	'https://wytdz.github.io',
@@ -132,8 +128,8 @@ var otherUrls = [
 var notices = [
     '* 我们推荐PC和Andriod手机用户使用Chrome(谷歌)浏览器访问，iPhone用户我们建议您使用手机自带Safria浏览器访问。',
     '* 大陆地区用户我们建议您可以使用VPN或者代理的方式来访问我们的永久地址。',
-	'* 大陆地区用户我们强烈建议您截图收藏当前页面(wytdz.github.io)。',
-	'本页面更新与2022/10/02'
+	'* 大陆地区用户我们强烈建议您截图收藏邮箱(wytshipin@gmail.com)。',
+	'本页面更新与2022/11'
 ];
 
 function createFieldElem(option) {
@@ -182,7 +178,7 @@ window.onload = function () {
     mainElem.appendChild(logoElem);
 
     // newest urls
-    var newestFieldElem = createFieldElem({title: '最新地址', items: newestUrls, text: '请使用https://协议访问网站'});
+    var newestFieldElem = createFieldElem({title: '最新地址', items: newestUrls, text: '如不能访问请发送任意内容到邮箱获取备用地址'});
     mainElem.appendChild(newestFieldElem);
 
     // other urls
@@ -190,7 +186,7 @@ window.onload = function () {
     mainElem.appendChild(otherFieldElem);
 
     // email
-    var mailFieldElem = createFieldElem({title: '发送邮件获得最新地址', items: emails, plainText: true});
+    var mailFieldElem = createFieldElem({title: '务必收藏邮箱，发送任意内容获得最新地址', items: emails, plainText: true});
     mainElem.appendChild(mailFieldElem);
 
     // forever urls
